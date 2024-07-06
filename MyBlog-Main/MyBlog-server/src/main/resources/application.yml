@@ -1,0 +1,23 @@
+server:
+  port: 3939
+
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+      driver-class-name: ${BaiJiu.datasource.driver-class-name}
+      url: jdbc:mysql://${BaiJiu.datasource.host}:${BaiJiu.datasource.port}/${BaiJiu.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${BaiJiu.datasource.username}
+      password: ${BaiJiu.datasource.password}
+
+
+logging:
+  level:
+    com:
+      BaiJiu:
+        mapper: debug
+        service: info
+        controller: info
+
+

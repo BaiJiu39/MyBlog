@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.BaiJiu.mapper.ArticlesMapper">
+
+    <resultMap id="BaseResultMap" type="com.BaiJiu.POJO.Entity.Articles">
+            <id property="articleId" column="article_id" jdbcType="INTEGER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="DATE"/>
+            <result property="lastUpdateTime" column="last_update_time" jdbcType="DATE"/>
+            <result property="isOriginal" column="is_original" jdbcType="INTEGER"/>
+            <result property="likeCount" column="like_count" jdbcType="INTEGER"/>
+            <result property="viewCount" column="view_count" jdbcType="INTEGER"/>
+            <result property="summary" column="summary" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        article_id,title,content,
+        create_time,last_update_time,is_original,
+        like_count,view_count,summary
+    </sql>
+</mapper>
