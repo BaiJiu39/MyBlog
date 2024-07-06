@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MyBlog
 使用Vue和SpringBoot开发的个人博客项目
 ## 技术栈
@@ -6,3 +7,6 @@
 后端：SpringBoot,MyBatis-plus,MySQL,Redis
 ## 项目进度
 该项目尚未完成，仅完成前端主页搭建，后端部分功能，部分数据交互尚未完善。
+=======
+# MyBlog
+>>>>>>> bc71f0756ca035836f6e2810f9084c0ff5e274c6
